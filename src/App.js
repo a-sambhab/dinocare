@@ -18,14 +18,14 @@ function App() {
       <Navbar/>
       <Landing/>
       <About/>
-      {/* <Form
+      <Form
         passnote={fetchid}
       />
       <Result
         dinoind={dinoid}
       />
       <Knowmore/>
-      <Footer/> */}
+      <Footer/>
     </>
   );
 }

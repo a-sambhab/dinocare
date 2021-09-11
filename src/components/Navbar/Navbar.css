@@ -38,6 +38,25 @@
 
 .nav-links:hover {
     transition: all 0.2s, ease-out;
+    -webkit-transform: translateX(-50%) scaleX(1);
+    transform: translateX(-50%) scaleX(1);
+
+}
+
+.nav-link::after{
+    content: "";
+    position:absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scalX(0);
+    -webkit-transform: translateX(-50%) scaleX(0);
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #374258;
+    -webkit-transform: transform 250ms;
+    transition: transform 250ms;
+
 }
 .fa-bars {
     color: black;
