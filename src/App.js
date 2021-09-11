@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './App.css'
 import Navbar from './components/Navbar/Navbar';
 import Landing from './components/Landing/Landing';
 import About from './components/About/About';
