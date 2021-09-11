@@ -27,7 +27,7 @@ export default function Result(props) {
     return (
         <div>
             <h1>
-                {Dino[props.dinoind].name}
+                {/* {Dino[props.dinoind].name} */}
                 Result
             </h1>
         </div>
