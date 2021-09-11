@@ -37,7 +37,6 @@
 }
 
 .nav-links:hover {
-    transition: all 0.2s, ease-out;
     -webkit-transform: translateX(-50%) scaleX(1);
     transform: translateX(-50%) scaleX(1);
 

@@ -6,6 +6,9 @@
 .bg-color-about{
     background-color: #374258;
     height: 40vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 .img{
     width: 50%;
