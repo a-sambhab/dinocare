@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
-import Landing from './components/Landing';
-import About from './components/About';
+import Navbar from './components/Navbar/Navbar';
+import Landing from './components/Landing/Landing';
+import About from './components/About/About';
 import Form from './components/Form';
 import Result from './components/Result';
 import Knowmore from './components/Knowmore';
 import Footer from './components/Footer'
+
 
 function App() {
   const [dinoid, setdinoid] = useState(-1);
@@ -13,16 +15,17 @@ function App() {
   // console.log(dinoid);
   return (
     <>
+      <Navbar/>
       <Landing/>
       <About/>
-      <Form
+      {/* <Form
         passnote={fetchid}
       />
       <Result
         dinoind={dinoid}
       />
       <Knowmore/>
-      <Footer/>
+      <Footer/> */}
     </>
   );
 }
