@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/post-no-bills-colombo');
+/* @import url('http://fonts.cdnfonts.com/css/post-no-bills-colombo'); */
 *{
     margin: 0%;
     padding: 0%;
@@ -23,13 +23,13 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-family: 'Post No Bills Colombo', sans-serif;
+    /* font-family: 'Post No Bills Colombo', sans-serif; */
 }
 .rescard{
     height: 80vh;
     width: 35%;
     background-color: #374258;
-    font-family: 'Post No Bills Colombo', sans-serif;
+    /* font-family: 'Post No Bills Colombo', sans-serif; */
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
