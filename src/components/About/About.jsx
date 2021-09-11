@@ -5,7 +5,7 @@ import './About.css'
 export default function About() {
     return (
         <div className="bg-color-about">
-            <div className="img"> <img src="https://res.cloudinary.com/dzbdnlr0f/image/upload/v1631305498/DINOCARE/dinosaur-icon-8_tj8nup.png" className="dino-img" srcset="" /></div>
+            <div className="img"> <img src="https://res.cloudinary.com/dzbdnlr0f/image/upload/v1631305498/DINOCARE/dinosaur-icon-8_tj8nup.png" className="dino-img" srcset="" alt="aboutdino"/></div>
             <div className="about-box">
                 <div className="box">
                     <h1 className="align">About</h1>
