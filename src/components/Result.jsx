@@ -1,35 +1,73 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import './result.css'
 
 var Dino = [
     {
-        name:"neeraj",
-        place:"home"
+        name:"brachiosaurus",
+        imgsrc:"https://res.cloudinary.com/dzbdnlr0f/image/upload/v1631365351/DINOCARE/dino_1_g1gsoc.png",
+        trait:"Slow, friendly",
+        fatal:"tend to not being able to distinguish foes",
+        improv:"know the difference from docile and coward : a brachiosaurus is not a coward"       
     },
     {
-        name:"harsh",
-        place:"home"
+        name:"Tyrannosaurus x",
+        imgsrc:"https://res.cloudinary.com/dzbdnlr0f/image/upload/v1631365349/DINOCARE/dino_2_vkpv9j.png",
+        trait:"gentle, kind, and caring",
+        fatal:"absent-minded and tends to cause accidental mayhem",
+        improv:"no matter how the world perceives you stay true to your"       
     },
     {
-        name:"sai",
-        place:"home"
+        name:"Velociraptor",
+        imgsrc:"https://res.cloudinary.com/dzbdnlr0f/image/upload/v1631365349/DINOCARE/dino_6_u2fqc4.png",
+        trait:"quick on your feet, smart and goal-driven",
+        fatal:"temper switches with the drop of a hat",
+        improv:"have to be smart enough to not let things go out of your hand"       
     },
     {
-        name:"shatanu",
-        place:"home"
-    }
+        name:"Stegosaurus",
+        imgsrc:"https://res.cloudinary.com/dzbdnlr0f/image/upload/v1631365349/DINOCARE/dino_5_rd7jti.png",
+        trait:"peaceful when not provoked",
+        fatal:"a bit more lazy than acceptable",
+        improv:"adopt larger than life personality easy-going"       
+    },
+    {
+        name:"Parasaurolophus",
+        imgsrc:"https://res.cloudinary.com/dzbdnlr0f/image/upload/v1631365350/DINOCARE/dino_7_ejymbj.png",
+        trait:" Highly sociable, with large herds",
+        fatal:"sometimes thrown out of there own herd",
+        improv:"should try to be self-sufficient"       
+    },
 ]
 
 
-export default function Result(props) {
-    // const [Dinoinfo, setDinoinfo] = useState(0);
-    // setDinoinfo(props.dinoind);
-    console.log([props.dinoind])
+export default function Result(dinoind) {
+    // let dinoname=Dino[dinoind].name
+    // let dinoindex=dinoind;
+    // console.log(Dino[dinoind.dinoind].name);
     return (
-        <div>
-            <h1>
-                {Dino[props.dinoind].name}
-                Result
-            </h1>
+        <div id="result">
+            <div className="reslefttext">
+                know your dino
+            </div>
+            <div className="rescard">
+                <img src={Dino[dinoind.dinoind].imgsrc} alt="dinoicon"/>
+                <h2>{Dino[dinoind.dinoind].name}</h2>
+                <span>Trait:</span> 
+                <p> {Dino[dinoind.dinoind].trait}</p>
+                <div className="personbox">
+                    <div className="fatalbox">
+                        <h3>Fatal flaw</h3>
+                        <span>
+                            {Dino[dinoind.dinoind].fatal}
+                        </span>
+                    </div>
+                    <div className="improvbox">
+                        <h3>Imporvement</h3>
+                        <span>{Dino[dinoind.dinoind].improv}</span>
+                    </div>
+                </div>
+
+            </div>
         </div>
     )
 }

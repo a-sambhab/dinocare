@@ -7,7 +7,7 @@ import Knowmore from './components/Knowmore';
 import Footer from './components/Footer'
 
 function App() {
-  const [dinoid, setdinoid] = useState(-1);
+  const [dinoid, setdinoid] = useState(0);
   const fetchid = (dinoid) => {
   setdinoid(dinoid);}
   // console.log(dinoid);
