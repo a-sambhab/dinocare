@@ -26,10 +26,7 @@ export default function Result(props) {
     console.log([props.dinoind])
     return (
         <div>
-            <h1>
-                {/* {Dino[props.dinoind].name} */}
-                Result
-            </h1>
+
         </div>
     )
 }

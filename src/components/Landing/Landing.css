@@ -1,0 +1,26 @@
+@import url('http://fonts.cdnfonts.com/css/post-no-bills-colombo');
+
+.bg-color-land{
+    background-color: #374258;
+    width: 100%;
+    height: 645px;
+    font-family: 'Post No Bills Colombo', sans-serif;
+
+}
+.dino-bg{
+    width: 50%;
+    float: right;
+    position:absolute;
+    padding-left:60rem ;
+    padding-top: 8.2rem;
+    
+}
+.title{
+    width: 50%;
+    float: left;
+    font-size: 10vw;
+    font-family: 'Post No Bills Colombo', sans-serif;
+    color: #AD9EFE;
+    padding-left: 7rem;
+    padding-top: 10rem;
+}

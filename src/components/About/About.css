@@ -1,0 +1,87 @@
+@import url('http://fonts.cdnfonts.com/css/post-no-bills-colombo');
+
+* {
+    box-sizing: border-box;
+  }
+.bg-color-about{
+    background-color: #374258;
+    height: 40vw;
+}
+.img{
+    width: 50%;
+    float: left;
+    padding: 15px;
+    padding-left: 6rem;
+    background-color: #F2DEBD;
+    height: 100%;
+    
+}
+
+.about-box{
+    width: 50%;
+    float: left;
+    padding: 15px;
+    background-color: #F2DEBD;
+    padding-left: 40px;
+    padding-right: 100px;
+    height: 100%;
+}
+
+.box{
+    border-radius: 20px;
+    background-color:  #374258;
+}
+
+
+.align{
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Post No Bills Colombo', sans-serif;
+    font-size: 4vw;
+    padding-bottom: 0;
+    color: #AD9EFE;
+
+}
+
+.about-text{
+    text-align: left;
+    font-size: 2vw;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    color: #EAEC90;
+}
+
+.dino-img{
+    width: 35vw;
+}
+
+@media screen and (max-width: 960px){
+    .about-box{
+        width: 50%;
+        float: left;
+        padding: 15px;
+        background-color: #F2DEBD;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .align{
+        padding-top: 10px;
+        text-align: center;
+        font-size: 4vw;
+        padding-bottom: 0;
+        color: #AD9EFE;
+    
+    }
+    
+    .about-text{
+        text-align: left;
+        font-size: 2vw;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        color: #EAEC90;
+    
+    }
+
+}
