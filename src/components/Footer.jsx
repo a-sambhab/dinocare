@@ -16,13 +16,19 @@ export default function Footer() {
 
                     <div className="socialmedia-box-footer">
                         <div className="instagram-icon">
-                        <InstagramIcon fontSize="large" color="primary"/> 
+                        <a href="">
+                        <InstagramIcon fontSize="large"/> 
+                        </a>
                         </div>
                         <div className="instagram-icon">
-                        <Facebook fontSize="large" color="primary"/>
+                        <a href="">
+                        <Facebook fontSize="large"/>
+                        </a>
                         </div>
                         <div className="instagram-icon">
-                        <Twitter fontSize="large" color="primary"/>
+                        <a href="">
+                        <Twitter fontSize="large"/>
+                        </a>
                         </div>
                     </div>
 
