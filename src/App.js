@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Landing from './components/Landing';
+import About from './components/About';
+import Form from './components/Form';
+import Result from './components/Result';
+import Knowmore from './components/Knowmore';
+import Footer from './components/Footer'
 
 function App() {
+  const [dinoid, setdinoid] = useState(-1);
+  const fetchid = (dinoid) => {
+  setdinoid(dinoid);}
+  // console.log(dinoid);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Landing/>
+      <About/>
+      <Form
+        passnote={fetchid}
+      />
+      <Result
+        dinoind={dinoid}
+      />
+      <Knowmore/>
+      <Footer/>
+    </>
   );
 }
 
