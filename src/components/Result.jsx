@@ -26,6 +26,7 @@ export default function Result(props) {
     console.log([props.dinoind])
     return (
         <div>
+
         </div>
     )
 }
