@@ -14,6 +14,7 @@
 }
 
 .upperText {
+  margin-top: 1%;
   font-size: 4.5rem;
   /* letter-spacing: 1rem; */
   text-transform: uppercase;
@@ -48,6 +49,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-size: 2rem;
   color: #ffffff;
 }
@@ -62,6 +64,10 @@
   /* display: flex;
   flex-direction: column;
   justify-content: space-around; */
+}
+
+.opts {
+  text-align: left;
 }
 
 .quesimg {
