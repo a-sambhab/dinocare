@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./Form.css";
 import FormData from "./FormData";
 
@@ -6,19 +6,24 @@ export default function Form(props) {
   const [Question, setQuestion] = useState(0);
   const [Visible, setVisible] = useState(false);
   const nextbtn = () => {
-    if(Question===3){
+    if (Question === 3) {
       setVisible(true);
     }
-    if(Question===4){
-      setQuestion(0);
+    if (Question === 4) {
+      setQuestion(4);
+    } else {
+      setQuestion(Question + 1);
+      // setVisible(false);
     }
-    else{
-    setQuestion(Question+1);
-    }
-  }
+  };
   const prevbtn = () => {
-    setQuestion(Question-1);
-  }
+    if (Question === 0) {
+      setQuestion(0);
+    } else {
+      setVisible(false);
+      setQuestion(Question - 1);
+    }
+  };
   const sendid = () => {
     var rd1 = document.getElementById("huey");
     var rd2 = document.getElementById("dewey");
@@ -42,33 +47,33 @@ export default function Form(props) {
   return (
     <div id="forms">
       <div className="upperText">
-        <h1>PERSONALITY</h1>
+        <h1>personality</h1>
       </div>
       <div className="innerDabba">
         <div className="questions">
           <p>{FormData[Question].question}</p>
 
-          <div>
+          <div className="opts">
             <input type="radio" id="huey" name="drone" value="huey" />
             <label for="huey">{FormData[Question].option1}</label>
           </div>
 
-          <div>
+          <div className="opts">
             <input type="radio" id="dewey" name="drone" value="dewey" />
             <label for="dewey">{FormData[Question].option2}</label>
           </div>
 
-          <div>
+          <div className="opts">
             <input type="radio" id="louie" name="drone" value="louie" />
             <label for="louie">{FormData[Question].option3}</label>
           </div>
 
-          <div>
+          <div className="opts">
             <input type="radio" id="yallaa" name="drone" value="louie" />
             <label for="yallaa">{FormData[Question].option4}</label>
           </div>
 
-          <div>
+          <div className="opts">
             <input type="radio" id="habibii" name="drone" value="louie" />
             <label for="habibii">{FormData[Question].option5}</label>
           </div>

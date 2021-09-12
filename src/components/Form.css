@@ -9,29 +9,31 @@
   background-color: #374258;
   display: flex;
   flex-direction: column;
-  padding-right: 10%;
+
   align-items: center;
 }
 
 .upperText {
-  font-size: 5rem;
+  margin-top: 1%;
+  font-size: 4.5rem;
   /* letter-spacing: 1rem; */
   text-transform: uppercase;
   /* padding-bottom: 45%;
   padding-left: 25%; */
   /* width: 10%; */
   height: 20%;
-  font-weight: 200;
+  font-weight: 20;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #ac9dfd;
   /* font-family: 'Post No Bills Colombo', sans-serif; */
 }
 
 .innerDabba {
-  width: 75%;
+  width: 85%;
   height: 75%;
   background-color: #f2debd;
   display: flex;
@@ -41,28 +43,46 @@
 }
 
 .questions {
-  width: 50%;
+  width: 80%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-size: 2rem;
+  color: #ffffff;
+}
+
+.questions p,
+.opts {
+  width: 40%;
+  padding: 5px;
+  margin: 5px;
+  background-color: #374258;
+  border-radius: 5px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+}
+
+.opts {
+  text-align: left;
 }
 
 .quesimg {
-  /* width: 50%;
-  padding: 10%;
+  /* width: 50%; */
+  /* padding: 10%;
   padding-left: 70%; */
   background-color: transparent;
   height: 100%;
   position: absolute;
-  right: 10%;
+  right: 2%;
   top: 200%;
 }
 
 .btns {
-  width: 50%;
+  width: 30%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -71,4 +91,7 @@
 .btns button,
 .btns input {
   font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
