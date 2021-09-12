@@ -34,23 +34,39 @@
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
+
+.rescard_image{
+    width: 200px;
+    height: 200px;
+    /* margin-bottom: 1rem; */
+}
+
 .rescard h2{
     font-size: 3rem;
     letter-spacing: 5px;
     text-transform: uppercase;
+    color: #AC9DFD;
 }
 .rescard span{
     font-size: 30px;
     font-weight: 700;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-transform: capitalize;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #AC9DFD;
 }
 .rescard p{
     font-size: 20px;
     text-transform: capitalize;
+    padding-left: 2rem;
+    font-family: sans-serif;
+    color: #F2DEBD;
+    /* text-decoration: none; */
 }
 .personbox{
     margin-top: 20px;
@@ -60,14 +76,22 @@
     align-items: center;
     text-align: center;
     font-size: 20px;
+    color: #AC9DFD;
 }
 .personbox h3{
     text-decoration: underline;
+    padding-bottom: 1rem;
+    letter-spacing: 0.08em;
+    
 }
 .personbox span{
     font-weight: 400;
     font-size: 20px;
     text-decoration: none;
+    color: #F2DEBD;
+    font-family: sans-serif;
+    padding: 0.8rem;
+    
 }
 .fatalbox{
     border-right: 2px solid #F2DEBD;
@@ -77,4 +101,20 @@
 .improvbox{
     height: 100%;
     width: 48%;
+    /* color: #F2DEBD; */
+    color: #AC9DFD;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.improvbox h3{
+    padding-bottom: 1rem;
+    letter-spacing: 0.08em;
+    font-weight: 1000;
+}
+
+.improvbox span{
+    padding: 0.8rem;
 }
