@@ -14,6 +14,7 @@
 }
 
 .upperText {
+  margin-top: 1%;
   font-size: 4.5rem;
   /* letter-spacing: 1rem; */
   text-transform: uppercase;
@@ -21,12 +22,13 @@
   padding-left: 25%; */
   /* width: 10%; */
   height: 20%;
-  font-weight: 200;
+  font-weight: 20;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #ac9dfd;
   /* font-family: 'Post No Bills Colombo', sans-serif; */
 }
 
@@ -47,8 +49,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-size: 2rem;
-  color: #ac9dfd;
+  color: #ffffff;
 }
 
 .questions p,
@@ -61,6 +64,10 @@
   /* display: flex;
   flex-direction: column;
   justify-content: space-around; */
+}
+
+.opts {
+  text-align: left;
 }
 
 .quesimg {
