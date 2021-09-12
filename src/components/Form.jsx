@@ -32,27 +32,27 @@ export default function Form(props) {
         <div className="questions">
           <p>Select a maintenance drone:</p>
 
-          <div>
+          <div className="opts">
             <input type="radio" id="huey" name="drone" value="huey" />
             <label for="huey">Huey</label>
           </div>
 
-          <div>
+          <div className="opts">
             <input type="radio" id="dewey" name="drone" value="dewey" />
             <label for="dewey">Dewey</label>
           </div>
 
-          <div>
+          <div className="opts">
             <input type="radio" id="louie" name="drone" value="louie" />
             <label for="louie">Louie</label>
           </div>
 
-          <div>
+          <div className="opts">
             <input type="radio" id="yallaa" name="drone" value="louie" />
             <label for="yallaa">Yallaa</label>
           </div>
 
-          <div>
+          <div className="opts">
             <input type="radio" id="habibii" name="drone" value="louie" />
             <label for="habibii">Habibii</label>
           </div>
