@@ -21,12 +21,13 @@
   padding-left: 25%; */
   /* width: 10%; */
   height: 20%;
-  font-weight: 200;
+  font-weight: 20;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #ac9dfd;
   /* font-family: 'Post No Bills Colombo', sans-serif; */
 }
 
@@ -48,7 +49,7 @@
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  color: #ac9dfd;
+  color: #ffffff;
 }
 
 .questions p,
