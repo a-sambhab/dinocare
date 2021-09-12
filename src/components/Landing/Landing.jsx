@@ -4,7 +4,7 @@ import "./Landing.css";
 export default function Landing() {
   return (
     <>
-      <div className="bg-color-land">
+      <div id="home" className="bg-color-land">
         <div className="title">
           DINOCARE
           <p>

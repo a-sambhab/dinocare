@@ -12,13 +12,13 @@ class Navbar extends Component {
                 <img className="logo-img" src="https://res.cloudinary.com/dnnaacqq0/image/upload/v1631379953/Screenshot__279__2-removebg-preview_3-removebg-preview_sl4qnp.png" alt="logo" />
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#Home">Home</a>
+                <a class="menu__link" href="#home">Home</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#About">About</a>
+                <a class="menu__link" href="#about">About</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#Dino">Dino</a>
+                <a class="menu__link" href="#forms">Dino</a>
             </li>
         </ul>
     </nav>

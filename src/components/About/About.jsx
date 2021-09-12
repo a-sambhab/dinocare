@@ -3,7 +3,7 @@ import "./About.css";
 
 export default function About() {
   return (
-    <div className="bg-color-about">
+    <div id="about" className="bg-color-about">
       <div className="img">
         {" "}
         <img
