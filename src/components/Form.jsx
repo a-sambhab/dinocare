@@ -1,8 +1,24 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Form.css";
+import FormData from "./FormData";
 
 export default function Form(props) {
-  // const [Dinoinfo, setDinoinfo] = useState(-1);
+  const [Question, setQuestion] = useState(0);
+  const [Visible, setVisible] = useState(false);
+  const nextbtn = () => {
+    if(Question===3){
+      setVisible(true);
+    }
+    if(Question===4){
+      setQuestion(0);
+    }
+    else{
+    setQuestion(Question+1);
+    }
+  }
+  const prevbtn = () => {
+    setQuestion(Question-1);
+  }
   const sendid = () => {
     var rd1 = document.getElementById("huey");
     var rd2 = document.getElementById("dewey");
@@ -30,36 +46,36 @@ export default function Form(props) {
       </div>
       <div className="innerDabba">
         <div className="questions">
-          <p>Select a maintenance drone:</p>
+          <p>{FormData[Question].question}</p>
 
           <div className="opts">
             <input type="radio" id="huey" name="drone" value="huey" />
-            <label for="huey">Huey</label>
+            <label for="huey">{FormData[Question].option1}</label>
           </div>
 
           <div className="opts">
             <input type="radio" id="dewey" name="drone" value="dewey" />
-            <label for="dewey">Dewey</label>
+            <label for="dewey">{FormData[Question].option2}</label>
           </div>
 
           <div className="opts">
             <input type="radio" id="louie" name="drone" value="louie" />
-            <label for="louie">Louie</label>
+            <label for="louie">{FormData[Question].option3}</label>
           </div>
 
           <div className="opts">
             <input type="radio" id="yallaa" name="drone" value="louie" />
-            <label for="yallaa">Yallaa</label>
+            <label for="yallaa">{FormData[Question].option4}</label>
           </div>
 
           <div className="opts">
             <input type="radio" id="habibii" name="drone" value="louie" />
-            <label for="habibii">Habibii</label>
+            <label for="habibii">{FormData[Question].option5}</label>
           </div>
           <div className="btns">
-            <button>Next</button>
-            <button>Previous</button>
-            <input onClick={sendid} type="submit" />
+            <button onClick={prevbtn}>Previous</button>
+            <button onClick={nextbtn}>Next</button>
+            {Visible && <input onClick={sendid} type="submit" />}
           </div>
         </div>
       </div>
