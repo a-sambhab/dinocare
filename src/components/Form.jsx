@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./Form.css";
 import FormData from "./FormData";
 
@@ -6,24 +6,24 @@ export default function Form(props) {
   const [Question, setQuestion] = useState(0);
   const [Visible, setVisible] = useState(false);
   const nextbtn = () => {
-    if(Question===3){
+    if (Question === 3) {
       setVisible(true);
     }
-    if(Question===4){
+    if (Question === 4) {
       setQuestion(4);
-    }
-    else{
-      setQuestion(Question+1);
+    } else {
+      setQuestion(Question + 1);
       // setVisible(false);
     }
-  }
+  };
   const prevbtn = () => {
-    if(Question===0){setQuestion(0)}
-    else{
+    if (Question === 0) {
+      setQuestion(0);
+    } else {
       setVisible(false);
-    setQuestion(Question-1);
+      setQuestion(Question - 1);
     }
-  }
+  };
   const sendid = () => {
     var rd1 = document.getElementById("huey");
     var rd2 = document.getElementById("dewey");
@@ -47,7 +47,7 @@ export default function Form(props) {
   return (
     <div id="forms">
       <div className="upperText">
-        <h1>PERSONALITY</h1>
+        <h1>personality</h1>
       </div>
       <div className="innerDabba">
         <div className="questions">
