@@ -10,14 +10,17 @@ export default function Form(props) {
       setVisible(true);
     }
     if(Question===4){
-      setQuestion(0);
+      setQuestion(4);
     }
     else{
     setQuestion(Question+1);
     }
   }
   const prevbtn = () => {
+    if(Question===0){setQuestion(0)}
+    else{
     setQuestion(Question-1);
+    }
   }
   const sendid = () => {
     var rd1 = document.getElementById("huey");
