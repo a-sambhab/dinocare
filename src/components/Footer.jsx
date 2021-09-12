@@ -16,17 +16,17 @@ export default function Footer() {
 
                     <div className="socialmedia-box-footer">
                         <div className="instagram-icon">
-                        <a href="">
+                        <a href="https://www.instagram.com/">
                         <InstagramIcon fontSize="large"/> 
                         </a>
                         </div>
                         <div className="instagram-icon">
-                        <a href="">
+                        <a href="https://www.instagram.com/">
                         <Facebook fontSize="large"/>
                         </a>
                         </div>
                         <div className="instagram-icon">
-                        <a href="">
+                        <a href="https://www.instagram.com/">
                         <Twitter fontSize="large"/>
                         </a>
                         </div>

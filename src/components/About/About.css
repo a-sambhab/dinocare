@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/post-no-bills-colombo');
+/* @import url('http://fonts.cdnfonts.com/css/post-no-bills-colombo'); */
 
 * {
     box-sizing: border-box;
@@ -39,7 +39,7 @@
 .align{
     padding-top: 10px;
     text-align: center;
-    font-family: 'Post No Bills Colombo', sans-serif;
+    /* font-family: 'Post No Bills Colombo', sans-serif; */
     font-size: 4vw;
     padding-bottom: 0;
     color: #AD9EFE;

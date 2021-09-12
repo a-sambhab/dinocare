@@ -1,33 +1,27 @@
 import React, {Component } from 'react';
-import { MenuItems } from './Menuitems'
 import './Navbar.css'
 
 class Navbar extends Component {
-    state = { clicked: false}
-
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked})
-    }
     render() {
     return (
-        <nav className="NavbarItems">
-            <h1 className="navbar-logo"><img src="https://res.cloudinary.com/dzbdnlr0f/image/upload/v1631393742/DINOCARE/logo_dinocare_yva9vc.png" /></h1>
-            <div className="menu-icon" onClick={this.handleClick}>
-                <i className={this.state.clicked ? "fas fa-times" : 'fas fa-bars'}></i>
 
-            </div>
-            <ul className={this.state.clicked ? 'nav-menu active': 'nav-menu'}>
-                {MenuItems.map((item, index) => {
-                    return(
-                        <li key={index}><a className={item.cName} href={item.url}>
-                        {item.title}
-                        </a></li>
-                    )
-                })}
-                
-                <li></li>
-            </ul>
-        </nav>
+        <nav class="main-nav">
+        <ul class="menu">
+            
+            <li class="menu__items to-left">
+                <img className="logo-img" src="https://res.cloudinary.com/dnnaacqq0/image/upload/v1631379953/Screenshot__279__2-removebg-preview_3-removebg-preview_sl4qnp.png" alt="logo" />
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#Home">Home</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#About">About</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#Dino">Dino</a>
+            </li>
+        </ul>
+    </nav>
     )
  }
 }
