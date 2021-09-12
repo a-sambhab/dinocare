@@ -9,12 +9,12 @@
   background-color: #374258;
   display: flex;
   flex-direction: column;
-  padding-right: 10%;
+
   align-items: center;
 }
 
 .upperText {
-  font-size: 5rem;
+  font-size: 4.5rem;
   /* letter-spacing: 1rem; */
   text-transform: uppercase;
   /* padding-bottom: 45%;
@@ -31,7 +31,7 @@
 }
 
 .innerDabba {
-  width: 75%;
+  width: 85%;
   height: 75%;
   background-color: #f2debd;
   display: flex;
@@ -41,28 +41,41 @@
 }
 
 .questions {
-  width: 50%;
+  width: 80%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  color: #ac9dfd;
+}
+
+.questions p,
+.opts {
+  width: 40%;
+  padding: 5px;
+  margin: 5px;
+  background-color: #374258;
+  border-radius: 5px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
 }
 
 .quesimg {
-  /* width: 50%;
-  padding: 10%;
+  /* width: 50%; */
+  /* padding: 10%;
   padding-left: 70%; */
   background-color: transparent;
   height: 100%;
   position: absolute;
-  right: 10%;
+  right: 2%;
   top: 200%;
 }
 
 .btns {
-  width: 50%;
+  width: 30%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -71,4 +84,7 @@
 .btns button,
 .btns input {
   font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
