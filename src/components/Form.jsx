@@ -10,13 +10,19 @@ export default function Form(props) {
       setVisible(true);
     }
     if (Question === 4) {
-      setQuestion(0);
+      setQuestion(4);
     } else {
       setQuestion(Question + 1);
+      // setVisible(false);
     }
   };
   const prevbtn = () => {
-    setQuestion(Question - 1);
+    if (Question === 0) {
+      setQuestion(0);
+    } else {
+      setVisible(false);
+      setQuestion(Question - 1);
+    }
   };
   const sendid = () => {
     var rd1 = document.getElementById("huey");
