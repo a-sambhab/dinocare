@@ -13,12 +13,14 @@ export default function Form(props) {
       setQuestion(4);
     }
     else{
-    setQuestion(Question+1);
+      setQuestion(Question+1);
+      // setVisible(false);
     }
   }
   const prevbtn = () => {
     if(Question===0){setQuestion(0)}
     else{
+      setVisible(false);
     setQuestion(Question-1);
     }
   }
