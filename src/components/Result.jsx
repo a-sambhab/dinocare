@@ -50,10 +50,10 @@ export default function Result(dinoind) {
                 know your dino
             </div>
             <div className="rescard">
-                <img src={Dino[dinoind.dinoind].imgsrc} alt="dinoicon"/>
+                <img className="rescard_image" src={Dino[dinoind.dinoind].imgsrc} alt="dinoicon"/>
                 <h2>{Dino[dinoind.dinoind].name}</h2>
-                <span>Trait:</span> 
-                <p> {Dino[dinoind.dinoind].trait}</p>
+                <span>Trait: <p> {Dino[dinoind.dinoind].trait}</p></span> 
+                
                 <div className="personbox">
                     <div className="fatalbox">
                         <h3>Fatal flaw</h3>

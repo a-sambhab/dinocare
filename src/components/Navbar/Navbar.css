@@ -101,8 +101,8 @@ ul {
 }
 .menu__item:hover{
     color: #374258;
-    border-bottom: 2px solid #374258b6;
-    transition:  .9s;
+    border-bottom: 3px solid #AC9DFD;
+    transition:  .1s;
 }
 
 .menu__item::after{
