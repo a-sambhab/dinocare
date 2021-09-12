@@ -51,27 +51,27 @@ export default function Form(props) {
         <div className="questions">
           <p>{FormData[Question].question}</p>
 
-          <div>
+          <div className="opts">
             <input type="radio" id="huey" name="drone" value="huey" />
             <label for="huey">{FormData[Question].option1}</label>
           </div>
 
-          <div>
+          <div className="opts">
             <input type="radio" id="dewey" name="drone" value="dewey" />
             <label for="dewey">{FormData[Question].option2}</label>
           </div>
 
-          <div>
+          <div className="opts">
             <input type="radio" id="louie" name="drone" value="louie" />
             <label for="louie">{FormData[Question].option3}</label>
           </div>
 
-          <div>
+          <div className="opts">
             <input type="radio" id="yallaa" name="drone" value="louie" />
             <label for="yallaa">{FormData[Question].option4}</label>
           </div>
 
-          <div>
+          <div className="opts">
             <input type="radio" id="habibii" name="drone" value="louie" />
             <label for="habibii">{FormData[Question].option5}</label>
           </div>
