@@ -24,7 +24,7 @@ function App() {
       />
       <Result
         dinoind={dinoid}
-      /> */}
+      /> 
       <Knowmore/>
       <Footer/>
     </>
